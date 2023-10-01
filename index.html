@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a class="title" href="#">Encriptador de texto</a>
+    </nav>
+</header>
+<main>
+
+<!-- encriptador -->
+
+    <section class="encriptador-area">
+<!-- escribir -->
+        <textarea class="encriptador" id="encriptador" cols="40" rows="10" placeholder="Ingrese texto"></textarea>
+
+        <div>
+            <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+        </div>
+<!-- botones -->
+        <div class="botones">
+            <button class="btn-encriptar" onClick="btnEncriptar()">Encriptar</button>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+
+    </section>
+
+<!-- desencriptador -->
+
+    <section class="desencriptador-area">
+
+        <textarea readonly class="mensaje" id="" cols="30" rows="10"></textarea>
+
+        <div>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </div>
+
+    </section>
+
+</main>
+<footer>
+
+    <p>By: Cristian Mateo Gutierrez</p>
+
+</footer>
+<script src="encriptador.js"></script>
+</body>
+</html>
